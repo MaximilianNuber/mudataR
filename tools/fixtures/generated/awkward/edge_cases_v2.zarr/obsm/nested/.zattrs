@@ -1,0 +1,6 @@
+{
+  "length": 5,
+  "form": "{\"class\": \"RecordArray\", \"fields\": [\"x\", \"flag\", \"name\"], \"contents\": [{\"class\": \"ListOffsetArray\", \"offsets\": \"i64\", \"content\": {\"class\": \"NumpyArray\", \"primitive\": \"int64\", \"inner_shape\": [], \"parameters\": {}, \"form_key\": \"node2\"}, \"parameters\": {}, \"form_key\": \"node1\"}, {\"class\": \"NumpyArray\", \"primitive\": \"bool\", \"inner_shape\": [], \"parameters\": {}, \"form_key\": \"node3\"}, {\"class\": \"IndexedOptionArray\", \"index\": \"i64\", \"content\": {\"class\": \"ListOffsetArray\", \"offsets\": \"i64\", \"content\": {\"class\": \"NumpyArray\", \"primitive\": \"uint8\", \"inner_shape\": [], \"parameters\": {\"__array__\": \"char\"}, \"form_key\": \"node6\"}, \"parameters\": {\"__array__\": \"string\"}, \"form_key\": \"node5\"}, \"parameters\": {}, \"form_key\": \"node4\"}], \"parameters\": {}, \"form_key\": \"node0\"}",
+  "encoding-type": "awkward-array",
+  "encoding-version": "0.1.0"
+}

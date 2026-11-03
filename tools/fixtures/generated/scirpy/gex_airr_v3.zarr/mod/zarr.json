@@ -1,0 +1,10 @@
+{
+  "attributes": {
+    "mod-order": [
+      "gex",
+      "airr"
+    ]
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}

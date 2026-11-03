@@ -1,0 +1,457 @@
+{
+ "obs_names": [
+  "c0",
+  "c1",
+  "c2",
+  "c3",
+  "c4",
+  "c5",
+  "c6"
+ ],
+ "airr": [
+  [],
+  [
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CASSLGQAYEQYF",
+    "locus": "TRB",
+    "my_score": 0.5,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 12,
+    "v_call": "TRBV7-9",
+    "v_cigar": null,
+    "c_call": null
+   }
+  ],
+  [
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CAVRDSNYQLIW",
+    "locus": "TRA",
+    "my_score": 1.25,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 7,
+    "v_call": "TRAV1-2",
+    "v_cigar": null,
+    "c_call": null
+   },
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CASSPGTGELFF",
+    "locus": "TRB",
+    "my_score": -2.0,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 30,
+    "v_call": "TRBV20-1",
+    "v_cigar": null,
+    "c_call": null
+   }
+  ],
+  [
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CAAA",
+    "locus": "TRA",
+    "my_score": null,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 3,
+    "v_call": "TRAV12-1",
+    "v_cigar": null,
+    "c_call": null
+   },
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CAAB",
+    "locus": "TRA",
+    "my_score": null,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 2,
+    "v_call": "TRAV12-2",
+    "v_cigar": null,
+    "c_call": null
+   },
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CAAC",
+    "locus": "TRA",
+    "my_score": null,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 1,
+    "v_call": "TRAV12-3",
+    "v_cigar": null,
+    "c_call": null
+   },
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CBBA",
+    "locus": "TRB",
+    "my_score": null,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 9,
+    "v_call": "TRBV5-1",
+    "v_cigar": null,
+    "c_call": null
+   },
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CBBB",
+    "locus": "TRB",
+    "my_score": null,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 8,
+    "v_call": "TRBV5-2",
+    "v_cigar": null,
+    "c_call": null
+   }
+  ],
+  [
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CARDYW",
+    "locus": "IGH",
+    "my_score": null,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 40,
+    "v_call": "IGHV3-23",
+    "v_cigar": null,
+    "c_call": "IGHM"
+   },
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CQQYNSYPLTF",
+    "locus": "IGK",
+    "my_score": null,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 22,
+    "v_call": "IGKV1-39",
+    "v_cigar": null,
+    "c_call": null
+   }
+  ],
+  [
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": null,
+    "locus": "TRB",
+    "my_score": null,
+    "productive": false,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 0,
+    "v_call": null,
+    "v_cigar": null,
+    "c_call": null
+   },
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": null,
+    "locus": "TRA",
+    "my_score": null,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 5,
+    "v_call": null,
+    "v_cigar": null,
+    "c_call": null
+   }
+  ],
+  [
+   {
+    "consensus_count": 1,
+    "d_call": null,
+    "d_cigar": null,
+    "duplicate_count": 1,
+    "germline_alignment": null,
+    "j_call": null,
+    "j_cigar": null,
+    "junction": null,
+    "junction_aa": "CQSYDSSLSGSVF",
+    "locus": "IGL",
+    "my_score": 3.0,
+    "productive": true,
+    "rev_comp": null,
+    "sequence": null,
+    "sequence_alignment": null,
+    "sequence_id": null,
+    "umi_count": 4,
+    "v_call": "IGLV1-40",
+    "v_cigar": null,
+    "c_call": null
+   }
+  ]
+ ],
+ "chain_indices": [
+  {
+   "VJ": [
+    null,
+    null
+   ],
+   "VDJ": [
+    null,
+    null
+   ],
+   "multichain": false
+  },
+  {
+   "VJ": [
+    null,
+    null
+   ],
+   "VDJ": [
+    0,
+    null
+   ],
+   "multichain": false
+  },
+  {
+   "VJ": [
+    0,
+    null
+   ],
+   "VDJ": [
+    1,
+    null
+   ],
+   "multichain": false
+  },
+  {
+   "VJ": [
+    0,
+    1
+   ],
+   "VDJ": [
+    3,
+    4
+   ],
+   "multichain": true
+  },
+  {
+   "VJ": [
+    1,
+    null
+   ],
+   "VDJ": [
+    0,
+    null
+   ],
+   "multichain": false
+  },
+  {
+   "VJ": [
+    null,
+    null
+   ],
+   "VDJ": [
+    null,
+    null
+   ],
+   "multichain": false
+  },
+  {
+   "VJ": [
+    0,
+    null
+   ],
+   "VDJ": [
+    null,
+    null
+   ],
+   "multichain": false
+  }
+ ],
+ "airr_type": "7 * var * {consensus_count: int64, d_call: ?unknown, d_cigar: ?unknown, duplicate_count: int64, germline_alignment: ?unknown, j_call: ?unknown, j_cigar: ?unknown, junction: ?unknown, junction_aa: ?string, locus: string, my_score: ?float64, productive: bool, rev_comp: ?unknown, sequence: ?unknown, sequence_alignment: ?unknown, sequence_id: ?unknown, umi_count: int64, v_call: ?string, v_cigar: ?unknown, c_call: ?string}",
+ "chain_indices_type": "7 * {VJ: 2 * ?int64, VDJ: 2 * ?int64, multichain: bool}",
+ "mudata": {
+  "obs_names": [
+   "c0",
+   "c1",
+   "c2",
+   "c3",
+   "c4",
+   "g7",
+   "g8",
+   "c5",
+   "c6"
+  ],
+  "var_names": [
+   "gene0",
+   "gene1",
+   "gene2",
+   "gene3",
+   "gene4"
+  ],
+  "obsmap": {
+   "gex": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    0,
+    0
+   ],
+   "airr": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    0,
+    0,
+    6,
+    7
+   ]
+  },
+  "varmap": {
+   "gex": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "airr": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "mod_order": [
+   "gex",
+   "airr"
+  ]
+ }
+}

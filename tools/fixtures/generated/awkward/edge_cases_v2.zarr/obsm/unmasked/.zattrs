@@ -1,0 +1,6 @@
+{
+  "length": 5,
+  "form": "{\"class\": \"UnmaskedArray\", \"content\": {\"class\": \"NumpyArray\", \"primitive\": \"int16\", \"inner_shape\": [], \"parameters\": {}, \"form_key\": \"node1\"}, \"parameters\": {}, \"form_key\": \"node0\"}",
+  "encoding-type": "awkward-array",
+  "encoding-version": "0.1.0"
+}

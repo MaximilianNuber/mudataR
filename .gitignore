@@ -1,0 +1,9 @@
+.dev-lib/
+tools/fixtures/.venv/
+.Rproj.user/
+*.Rcheck/
+mudataR_*.tar.gz
+.claude/
+CLAUDE.md
+.Rhistory
+.RData

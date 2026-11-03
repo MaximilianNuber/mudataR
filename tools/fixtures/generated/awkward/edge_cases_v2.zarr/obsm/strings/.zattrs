@@ -1,0 +1,6 @@
+{
+  "length": 5,
+  "form": "{\"class\": \"IndexedOptionArray\", \"index\": \"i64\", \"content\": {\"class\": \"ListOffsetArray\", \"offsets\": \"i64\", \"content\": {\"class\": \"IndexedOptionArray\", \"index\": \"i64\", \"content\": {\"class\": \"ListOffsetArray\", \"offsets\": \"i64\", \"content\": {\"class\": \"NumpyArray\", \"primitive\": \"uint8\", \"inner_shape\": [], \"parameters\": {\"__array__\": \"char\"}, \"form_key\": \"node4\"}, \"parameters\": {\"__array__\": \"string\"}, \"form_key\": \"node3\"}, \"parameters\": {}, \"form_key\": \"node2\"}, \"parameters\": {}, \"form_key\": \"node1\"}, \"parameters\": {}, \"form_key\": \"node0\"}",
+  "encoding-type": "awkward-array",
+  "encoding-version": "0.1.0"
+}

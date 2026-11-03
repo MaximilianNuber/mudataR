@@ -1,0 +1,10 @@
+{
+  "attributes": {
+    "encoding-type": "anndata",
+    "encoding-version": "0.1.0",
+    "encoder": "mudata",
+    "encoder-version": "0.4.1"
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}

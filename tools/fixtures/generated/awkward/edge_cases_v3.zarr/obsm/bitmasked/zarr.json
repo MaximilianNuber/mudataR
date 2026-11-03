@@ -1,0 +1,10 @@
+{
+  "attributes": {
+    "length": 5,
+    "form": "{\"class\": \"BitMaskedArray\", \"mask\": \"u8\", \"valid_when\": false, \"lsb_order\": true, \"content\": {\"class\": \"NumpyArray\", \"primitive\": \"float32\", \"inner_shape\": [], \"parameters\": {}, \"form_key\": \"node1\"}, \"parameters\": {}, \"form_key\": \"node0\"}",
+    "encoding-type": "awkward-array",
+    "encoding-version": "0.1.0"
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}

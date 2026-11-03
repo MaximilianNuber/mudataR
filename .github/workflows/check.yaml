@@ -1,0 +1,76 @@
+# CI for mudataR.
+#
+# * `native`: R CMD check with no Python anywhere on the runner. Native H5MU,
+#   Zarr and Awkward code must pass here; reticulate must never initialise.
+# * `oracle`: adds the pinned Python environment from tools/fixtures and runs
+#   the cross-language tests (Python mudata/scirpy read files written by R).
+#
+# mudataR uses only anndataR's public API. It needs anndataR >= 1.3.3 and
+# Rarr >= 2.1.27 (Zarr), which are currently on Bioconductor devel, so both
+# jobs install them from their GitHub default branches.
+name: check
+
+on:
+  push:
+  pull_request:
+
+env:
+  ANNDATAR_REF: "scverse/anndataR"
+  RARR_REF: "Huber-group-EMBL/Rarr@devel"
+  R_KEEP_PKG_SOURCE: yes
+
+jobs:
+  native:
+    runs-on: ubuntu-latest
+    env:
+      # make any accidental Python use fail loudly
+      RETICULATE_PYTHON: /nonexistent/python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+          use-public-rspm: true
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::rcmdcheck
+            github::${{ env.ANNDATAR_REF }}
+            github::${{ env.RARR_REF }}
+            bioc::rhdf5
+            bioc::HDF5Array
+          needs: check
+      - name: Assert no Python packages are importable
+        run: |
+          ! python3 -c "import mudata" 2>/dev/null
+          ! python3 -c "import anndata" 2>/dev/null
+          ! python3 -c "import awkward" 2>/dev/null
+          ! python3 -c "import scirpy" 2>/dev/null
+      - uses: r-lib/actions/check-r-package@v2
+        with:
+          args: 'c("--no-manual", "--as-cran")'
+          error-on: '"warning"'
+
+  oracle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Python oracle environment
+        working-directory: tools/fixtures
+        run: uv sync --frozen
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+          use-public-rspm: true
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::devtools
+            github::${{ env.ANNDATAR_REF }}
+            github::${{ env.RARR_REF }}
+            bioc::rhdf5
+      - name: Cross-language tests
+        env:
+          MUDATAR_ORACLE_PYTHON: ${{ github.workspace }}/tools/fixtures/.venv/bin/python
+        run: Rscript -e 'devtools::test(filter = "cross-language", stop_on_failure = TRUE)'

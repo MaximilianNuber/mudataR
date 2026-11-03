@@ -1,0 +1,8 @@
+^\.dev-lib$
+^tools$
+^docs$
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.Renviron$
+^\.github$
+^README\.Rmd$

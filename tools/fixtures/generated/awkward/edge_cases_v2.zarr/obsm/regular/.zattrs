@@ -1,0 +1,6 @@
+{
+  "length": 5,
+  "form": "{\"class\": \"RegularArray\", \"size\": 2, \"content\": {\"class\": \"NumpyArray\", \"primitive\": \"uint8\", \"inner_shape\": [], \"parameters\": {}, \"form_key\": \"node1\"}, \"parameters\": {}, \"form_key\": \"node0\"}",
+  "encoding-type": "awkward-array",
+  "encoding-version": "0.1.0"
+}

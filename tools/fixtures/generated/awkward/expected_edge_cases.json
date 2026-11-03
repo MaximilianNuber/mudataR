@@ -1,0 +1,413 @@
+{
+ "obs_names": [
+  "cell0",
+  "cell1",
+  "cell2",
+  "cell3",
+  "cell4"
+ ],
+ "values": {
+  "strings": [
+   [
+    "a",
+    ""
+   ],
+   [],
+   null,
+   [
+    null,
+    "xyz"
+   ],
+   [
+    ""
+   ]
+  ],
+  "bytemasked": [
+   10,
+   null,
+   30,
+   null,
+   50
+  ],
+  "bitmasked": [
+   1.5,
+   null,
+   3.5,
+   4.5,
+   null
+  ],
+  "listarray": [
+   [
+    3,
+    4
+   ],
+   [
+    0,
+    1
+   ],
+   [],
+   [
+    2,
+    3
+   ],
+   [
+    5
+   ]
+  ],
+  "regular": [
+   [
+    0,
+    1
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    8,
+    9
+   ]
+  ],
+  "indexed": [
+   "",
+   "x",
+   "yy",
+   "",
+   "x"
+  ],
+  "unmasked": [
+   1,
+   -2,
+   3,
+   -4,
+   5
+  ],
+  "tuples": [
+   [
+    1,
+    "a"
+   ],
+   [
+    2,
+    ""
+   ],
+   [
+    3,
+    "c"
+   ],
+   [
+    4,
+    "d"
+   ],
+   [
+    5,
+    "e"
+   ]
+  ],
+  "nested": [
+   {
+    "x": [
+     1,
+     2
+    ],
+    "flag": true,
+    "name": "p"
+   },
+   {
+    "x": [],
+    "flag": false,
+    "name": ""
+   },
+   {
+    "x": [
+     3
+    ],
+    "flag": true,
+    "name": null
+   },
+   {
+    "x": [
+     4,
+     5,
+     6
+    ],
+    "flag": false,
+    "name": "q"
+   },
+   {
+    "x": [
+     7
+    ],
+    "flag": true,
+    "name": "r"
+   }
+  ]
+ },
+ "types": {
+  "strings": "5 * option[var * ?string]",
+  "bytemasked": "5 * ?int64",
+  "bitmasked": "5 * ?float32",
+  "listarray": "5 * var * int32",
+  "regular": "5 * 2 * uint8",
+  "indexed": "5 * string",
+  "unmasked": "5 * ?int16",
+  "tuples": "5 * (int64, string)",
+  "nested": "5 * {x: var * int64, flag: bool, name: ?string}"
+ },
+ "forms": {
+  "bitmasked": {
+   "class": "BitMaskedArray",
+   "mask": "u8",
+   "valid_when": false,
+   "lsb_order": true,
+   "content": {
+    "class": "NumpyArray",
+    "primitive": "float32",
+    "inner_shape": [],
+    "parameters": {},
+    "form_key": "node1"
+   },
+   "parameters": {},
+   "form_key": "node0"
+  },
+  "bytemasked": {
+   "class": "ByteMaskedArray",
+   "mask": "i8",
+   "valid_when": true,
+   "content": {
+    "class": "NumpyArray",
+    "primitive": "int64",
+    "inner_shape": [],
+    "parameters": {},
+    "form_key": "node1"
+   },
+   "parameters": {},
+   "form_key": "node0"
+  },
+  "indexed": {
+   "class": "ListOffsetArray",
+   "offsets": "i64",
+   "content": {
+    "class": "NumpyArray",
+    "primitive": "uint8",
+    "inner_shape": [],
+    "parameters": {
+     "__array__": "char"
+    },
+    "form_key": "node1"
+   },
+   "parameters": {
+    "__array__": "string"
+   },
+   "form_key": "node0"
+  },
+  "listarray": {
+   "class": "ListOffsetArray",
+   "offsets": "i64",
+   "content": {
+    "class": "NumpyArray",
+    "primitive": "int32",
+    "inner_shape": [],
+    "parameters": {},
+    "form_key": "node1"
+   },
+   "parameters": {},
+   "form_key": "node0"
+  },
+  "nested": {
+   "class": "RecordArray",
+   "fields": [
+    "x",
+    "flag",
+    "name"
+   ],
+   "contents": [
+    {
+     "class": "ListOffsetArray",
+     "offsets": "i64",
+     "content": {
+      "class": "NumpyArray",
+      "primitive": "int64",
+      "inner_shape": [],
+      "parameters": {},
+      "form_key": "node2"
+     },
+     "parameters": {},
+     "form_key": "node1"
+    },
+    {
+     "class": "NumpyArray",
+     "primitive": "bool",
+     "inner_shape": [],
+     "parameters": {},
+     "form_key": "node3"
+    },
+    {
+     "class": "IndexedOptionArray",
+     "index": "i64",
+     "content": {
+      "class": "ListOffsetArray",
+      "offsets": "i64",
+      "content": {
+       "class": "NumpyArray",
+       "primitive": "uint8",
+       "inner_shape": [],
+       "parameters": {
+        "__array__": "char"
+       },
+       "form_key": "node6"
+      },
+      "parameters": {
+       "__array__": "string"
+      },
+      "form_key": "node5"
+     },
+     "parameters": {},
+     "form_key": "node4"
+    }
+   ],
+   "parameters": {},
+   "form_key": "node0"
+  },
+  "regular": {
+   "class": "RegularArray",
+   "size": 2,
+   "content": {
+    "class": "NumpyArray",
+    "primitive": "uint8",
+    "inner_shape": [],
+    "parameters": {},
+    "form_key": "node1"
+   },
+   "parameters": {},
+   "form_key": "node0"
+  },
+  "strings": {
+   "class": "IndexedOptionArray",
+   "index": "i64",
+   "content": {
+    "class": "ListOffsetArray",
+    "offsets": "i64",
+    "content": {
+     "class": "IndexedOptionArray",
+     "index": "i64",
+     "content": {
+      "class": "ListOffsetArray",
+      "offsets": "i64",
+      "content": {
+       "class": "NumpyArray",
+       "primitive": "uint8",
+       "inner_shape": [],
+       "parameters": {
+        "__array__": "char"
+       },
+       "form_key": "node4"
+      },
+      "parameters": {
+       "__array__": "string"
+      },
+      "form_key": "node3"
+     },
+     "parameters": {},
+     "form_key": "node2"
+    },
+    "parameters": {},
+    "form_key": "node1"
+   },
+   "parameters": {},
+   "form_key": "node0"
+  },
+  "tuples": {
+   "class": "RecordArray",
+   "fields": null,
+   "contents": [
+    {
+     "class": "NumpyArray",
+     "primitive": "int64",
+     "inner_shape": [],
+     "parameters": {},
+     "form_key": "node1"
+    },
+    {
+     "class": "ListOffsetArray",
+     "offsets": "i64",
+     "content": {
+      "class": "NumpyArray",
+      "primitive": "uint8",
+      "inner_shape": [],
+      "parameters": {
+       "__array__": "char"
+      },
+      "form_key": "node3"
+     },
+     "parameters": {
+      "__array__": "string"
+     },
+     "form_key": "node2"
+    }
+   ],
+   "parameters": {},
+   "form_key": "node0"
+  },
+  "unmasked": {
+   "class": "UnmaskedArray",
+   "content": {
+    "class": "NumpyArray",
+    "primitive": "int16",
+    "inner_shape": [],
+    "parameters": {},
+    "form_key": "node1"
+   },
+   "parameters": {},
+   "form_key": "node0"
+  },
+  "union": {
+   "class": "UnionArray",
+   "tags": "i8",
+   "index": "i64",
+   "contents": [
+    {
+     "class": "NumpyArray",
+     "primitive": "int64",
+     "inner_shape": [],
+     "parameters": {},
+     "form_key": "node1"
+    },
+    {
+     "class": "ListOffsetArray",
+     "offsets": "i64",
+     "content": {
+      "class": "NumpyArray",
+      "primitive": "uint8",
+      "inner_shape": [],
+      "parameters": {
+       "__array__": "char"
+      },
+      "form_key": "node3"
+     },
+     "parameters": {
+      "__array__": "string"
+     },
+     "form_key": "node2"
+    }
+   ],
+   "parameters": {},
+   "form_key": "node0"
+  }
+ },
+ "versions": {
+  "anndata": "0.13.4",
+  "awkward": "2.14.0",
+  "zarr": "3.4.2",
+  "h5py": "3.16.0",
+  "numpy": "2.5.4"
+ }
+}
